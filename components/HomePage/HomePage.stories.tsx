@@ -1,10 +1,15 @@
+import type { Meta, StoryObj } from '@storybook/react';
 import { HomePage } from '.';
 
-export default {
-	title: 'Pages/Home',
-	component: HomePage,
+const meta: Meta<typeof HomePage> = {
+  title: 'Pages/Home',
+  component: HomePage,
+  parameters: {
+    layout: 'fullscreen',
+  },
 };
 
-export const Default = () => {
-	return <HomePage />;
-};
+export default meta;
+type Story = StoryObj<typeof HomePage>;
+
+export const Default: Story = {};
