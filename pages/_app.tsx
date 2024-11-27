@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<Core theme={theme} linkComponent={LinkComponent}>
 			<Head>
+				<title>AI Risk and Control Framework</title>
 				<meta
 					name="viewport"
 					content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
